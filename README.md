@@ -177,3 +177,9 @@ This project demonstrates:
 - Production-quality code within a limited scope
 
 ---
+
+## 📸 Screenshots
+
+### Tasks Page
+
+![Tasks Page](screenshots/ui-screenshot.png)
