@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  fullName  String   @map("full_name")
+  tasks     Task[]
+
+  @@map("Users")
+}
+
+model Task {
+  id          Int      @id @default(autoincrement())
+  userId      Int      @map("user_id")
+  title       String
+  description String?
+  status      Status   @default(OPEN)
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  user        User     @relation(fields: [userId], references: [id])
+
+  @@map("Tasks")
+}
+
+enum Status {
+  OPEN
+  IN_PROGRESS
+  DONE
+}
