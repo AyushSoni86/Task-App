@@ -1,10 +1,3 @@
-Perfect. Below is a **short, clean, top-level README** you can put at the **root of the repository**.
-It ties **backend + frontend together**, is easy to follow, and looks **interview-ready**.
-
-You can copy-paste this as `README.md` in the root.
-
----
-
 # Mini Tasks App – Full Stack Assignment
 
 This repository contains a **full-stack Tasks application** built as part of a technical assignment.
