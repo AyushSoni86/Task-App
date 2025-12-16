@@ -8,7 +8,7 @@ const TaskForm = ({ newTask, setNewTask, onSubmit, onCancel, submitting }) => {
       </h3>
       <div className="grid gap-4">
         <div>
-          <label className="block text-sm font-medium text-slate-700 mb-1.5">
+          <label className="block text-left text-lg font-medium text-slate-700 mb-1.5">
             Title <span className="text-red-500">*</span>
           </label>
           <input
@@ -20,7 +20,7 @@ const TaskForm = ({ newTask, setNewTask, onSubmit, onCancel, submitting }) => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-700 mb-1.5">
+          <label className="block text-left text-lg font-medium text-slate-700 mb-1.5">
             Description (Optional)
           </label>
           <textarea

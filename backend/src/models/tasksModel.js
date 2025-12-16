@@ -10,7 +10,6 @@ export const getTasks = async ({ userId, status, q, limit, offset }) => {
     ...(q && {
       title: {
         contains: q,
-        mode: "insensitive",
       },
     }),
   };

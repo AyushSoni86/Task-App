@@ -78,7 +78,7 @@ const TaskTable = ({ tasks, onAdvanceStatus }) => {
                   </button>
                 )}
                 {task.status === "DONE" && (
-                  <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                  <span className="text-green-600 text-center text-sm font-medium flex items-center gap-1 ml-9">
                     <CheckCircle2 className="w-4 h-4" />
                     Completed
                   </span>
